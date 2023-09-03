@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64707AB22AA44EA000C1F9E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64707AB12AA44EA000C1F9E7 /* LoginView.swift */; };
 		64AC5CE32AA3901C0011B607 /* _6_swift_threads_asyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */; };
 		64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC5CE42AA3901C0011B607 /* ContentView.swift */; };
 		64AC5CE72AA3901E0011B607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC5CE62AA3901E0011B607 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64707AB12AA44EA000C1F9E7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		64AC5CDF2AA3901C0011B607 /* 16-swift-threads-async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-swift-threads-async.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6_swift_threads_asyncApp.swift; sourceTree = "<group>"; };
 		64AC5CE42AA3901C0011B607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64707AA82AA44E0600C1F9E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		64707AA92AA44E1100C1F9E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64707AAA2AA44E1600C1F9E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64707AAB2AA44E1A00C1F9E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64707AAC2AA44E2400C1F9E7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				64707AAF2AA44E6E00C1F9E7 /* Authentication */,
+				64707AAE2AA44E6900C1F9E7 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64707AAD2AA44E2C00C1F9E7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		64707AAE2AA44E6900C1F9E7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				64AC5CE42AA3901C0011B607 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		64707AAF2AA44E6E00C1F9E7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				64707AB02AA44E9400C1F9E7 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		64707AB02AA44E9400C1F9E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64707AB12AA44EA000C1F9E7 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		64AC5CD62AA3901C0011B607 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +133,12 @@
 		64AC5CE12AA3901C0011B607 /* 16-swift-threads-async */ = {
 			isa = PBXGroup;
 			children = (
-				64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */,
-				64AC5CE42AA3901C0011B607 /* ContentView.swift */,
+				64707AAD2AA44E2C00C1F9E7 /* App */,
+				64707AAC2AA44E2400C1F9E7 /* Core */,
+				64707AAB2AA44E1A00C1F9E7 /* Extensions */,
+				64707AAA2AA44E1600C1F9E7 /* Model */,
+				64707AA92AA44E1100C1F9E7 /* Services */,
+				64707AA82AA44E0600C1F9E7 /* Utils */,
 				64AC5CE62AA3901E0011B607 /* Assets.xcassets */,
 				64AC5CFA2AA393B40011B607 /* GoogleService-Info.plist */,
 				64AC5CE82AA3901E0011B607 /* _6_swift_threads_async.entitlements */,
@@ -160,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64707AB22AA44EA000C1F9E7 /* LoginView.swift in Sources */,
 				64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */,
 				64AC5CE32AA3901C0011B607 /* _6_swift_threads_asyncApp.swift in Sources */,
 			);
