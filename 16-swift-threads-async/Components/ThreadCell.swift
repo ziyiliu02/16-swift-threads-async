@@ -2,7 +2,7 @@
 //  ThreadCell.swift
 //  16-swift-threads-async
 //
-//  Created by Liu Ziyi on 4/9/23.
+//  Created by Liu Ziyi on 9/9/23.
 //
 
 import SwiftUI
