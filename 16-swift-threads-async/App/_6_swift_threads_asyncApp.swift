@@ -17,7 +17,7 @@ struct _6_swift_threads_asyncApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
         }
     }
 }
