@@ -20,6 +20,8 @@
 		6492D8542AAC684500DAF0E4 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6492D8532AAC684500DAF0E4 /* ThreadCell.swift */; };
 		64933E3A2AA5DF7C006CFFA5 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64933E392AA5DF7C006CFFA5 /* CircularProfileImageView.swift */; };
 		64933E3C2AA5E02F006CFFA5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64933E3B2AA5E02F006CFFA5 /* UserCell.swift */; };
+		64A3E9D52AAD55D500214EA4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3E9D42AAD55D500214EA4 /* AuthService.swift */; };
+		64A972592AACE4FF00A9C760 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A972582AACE4FF00A9C760 /* RegistrationViewModel.swift */; };
 		64AC5CE32AA3901C0011B607 /* _6_swift_threads_asyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */; };
 		64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC5CE42AA3901C0011B607 /* ContentView.swift */; };
 		64AC5CE72AA3901E0011B607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC5CE62AA3901E0011B607 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		6492D8532AAC684500DAF0E4 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		64933E392AA5DF7C006CFFA5 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		64933E3B2AA5E02F006CFFA5 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		64A3E9D42AAD55D500214EA4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		64A972582AACE4FF00A9C760 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		64AC5CDF2AA3901C0011B607 /* 16-swift-threads-async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-swift-threads-async.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AC5CE22AA3901C0011B607 /* _6_swift_threads_asyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6_swift_threads_asyncApp.swift; sourceTree = "<group>"; };
 		64AC5CE42AA3901C0011B607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 		64707AAF2AA44E6E00C1F9E7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				64A972572AACE0B200A9C760 /* Services */,
+				64A972552AACE09300A9C760 /* ViewModels */,
 				64707AB02AA44E9400C1F9E7 /* Views */,
 			);
 			path = Authentication;
@@ -262,6 +268,22 @@
 				6492D8532AAC684500DAF0E4 /* ThreadCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		64A972552AACE09300A9C760 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				64A972582AACE4FF00A9C760 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		64A972572AACE0B200A9C760 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64A3E9D42AAD55D500214EA4 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		64AC5CD62AA3901C0011B607 = {
@@ -403,7 +425,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				648DF7652AA4E17100719427 /* FeedView.swift in Sources */,
+				64A972592AACE4FF00A9C760 /* RegistrationViewModel.swift in Sources */,
 				64707AB22AA44EA000C1F9E7 /* LoginView.swift in Sources */,
+				64A3E9D52AAD55D500214EA4 /* AuthService.swift in Sources */,
 				64BB92922AAC8F6400ECF0F9 /* EditProfileView.swift in Sources */,
 				64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */,
 				6492D8542AAC684500DAF0E4 /* ThreadCell.swift in Sources */,
