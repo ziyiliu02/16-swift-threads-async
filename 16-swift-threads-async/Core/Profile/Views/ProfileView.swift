@@ -17,6 +17,10 @@ struct ProfileView: View {
     }
     @StateObject var viewModel = ProfileViewModel() 
     
+    private var currentUser: User? {
+        return viewModel.currentUser
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
@@ -28,17 +32,19 @@ struct ProfileView: View {
                         VStack(alignment: .leading, spacing: 12) {
                             // (fullname + username)
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("Lee Hsien Loong")
+                                Text(currentUser?.fullname ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
-                                Text("leehsienloong")
+                                Text(currentUser?.username ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                             }
                             
-                            Text("Politican")
-                                .font(.footnote)
+                            if let bio = currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             Text("684k followers")
                                 .font(.caption)
