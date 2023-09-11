@@ -15,6 +15,7 @@ struct ProfileView: View {
         let count = CGFloat(ProfileThreadFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 20
     }
+    @StateObject var viewModel = ProfileViewModel() 
     
     var body: some View {
         NavigationStack {
