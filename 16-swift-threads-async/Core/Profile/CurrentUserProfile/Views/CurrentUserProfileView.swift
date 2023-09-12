@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     
+    @State private var showEditProfile = false
     @StateObject var viewModel = CurrentProfileViewModel()
     
     private var currentUser: User? {
@@ -24,7 +25,7 @@ struct CurrentUserProfileView: View {
                     ProfileHeaderView(user: currentUser)
                     
                     Button {
-                        
+                        showEditProfile.toggle() 
                     } label: {
                         Text("Edit Profile")
                             .font(.subheadline)
@@ -44,6 +45,9 @@ struct CurrentUserProfileView: View {
                     UserContentListView()
                 }
             }
+            .sheet(isPresented: $showEditProfile, content: {
+                EditProfileView()
+            })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
