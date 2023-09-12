@@ -29,11 +29,12 @@ struct ExploreView: View {
                 }
             }
             .navigationDestination(for: User.self, destination: { user in
-                ProfileView()
+                ProfileView(user: user)
             })
             .navigationTitle("Search")
             .searchable(text: $searchText, prompt: "Search")
         }
+        .foregroundColor(.black)
     }
 }
 
