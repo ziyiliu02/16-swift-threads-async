@@ -43,6 +43,7 @@
 		64AC5CF72AA3920C0011B607 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64AC5CF62AA3920C0011B607 /* FirebaseFirestoreSwift */; };
 		64AC5CF92AA3920C0011B607 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64AC5CF82AA3920C0011B607 /* FirebaseStorage */; };
 		64AC5CFB2AA393B60011B607 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64AC5CFA2AA393B40011B607 /* GoogleService-Info.plist */; };
+		64B8D8A02AB0767500A33BC1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */; };
 		64BB92922AAC8F6400ECF0F9 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BB92912AAC8F6400ECF0F9 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		64AC5CE82AA3901E0011B607 /* _6_swift_threads_async.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _6_swift_threads_async.entitlements; sourceTree = "<group>"; };
 		64AC5CEA2AA3901E0011B607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64AC5CFA2AA393B40011B607 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		64BB92912AAC8F6400ECF0F9 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			children = (
 				6493B44E2AAEBEE200D441F5 /* AuthService.swift */,
 				64A26B212AAE2465008194EF /* UserService.swift */,
+				64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				64707AB22AA44EA000C1F9E7 /* LoginView.swift in Sources */,
 				64A39B232AAF543600D78596 /* PreviewProvider.swift in Sources */,
 				64BB92922AAC8F6400ECF0F9 /* EditProfileView.swift in Sources */,
+				64B8D8A02AB0767500A33BC1 /* ImageUploader.swift in Sources */,
 				64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */,
 				64A26B222AAE2465008194EF /* UserService.swift in Sources */,
 				6492D8542AAC684500DAF0E4 /* ThreadCell.swift in Sources */,
