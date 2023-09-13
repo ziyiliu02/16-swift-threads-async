@@ -45,6 +45,9 @@
 		64AC5CFB2AA393B60011B607 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64AC5CFA2AA393B40011B607 /* GoogleService-Info.plist */; };
 		64B8D8A02AB0767500A33BC1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */; };
 		64B8D8A32AB18F1500A33BC1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 64B8D8A22AB18F1500A33BC1 /* Kingfisher */; };
+		64B8D8A52AB1B6AB00A33BC1 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8D8A42AB1B6AB00A33BC1 /* Thread.swift */; };
+		64B8D8A82AB1BFE000A33BC1 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8D8A72AB1BFE000A33BC1 /* CreateThreadViewModel.swift */; };
+		64B8D8AA2AB1C01700A33BC1 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8D8A92AB1C01700A33BC1 /* ThreadService.swift */; };
 		64BB92922AAC8F6400ECF0F9 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BB92912AAC8F6400ECF0F9 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		64AC5CEA2AA3901E0011B607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64AC5CFA2AA393B40011B607 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		64B8D8A42AB1B6AB00A33BC1 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		64B8D8A72AB1BFE000A33BC1 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		64B8D8A92AB1C01700A33BC1 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		64BB92912AAC8F6400ECF0F9 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +123,7 @@
 			children = (
 				6493B44E2AAEBEE200D441F5 /* AuthService.swift */,
 				64A26B212AAE2465008194EF /* UserService.swift */,
+				64B8D8A92AB1C01700A33BC1 /* ThreadService.swift */,
 				64B8D89F2AB0767500A33BC1 /* ImageUploader.swift */,
 			);
 			path = Services;
@@ -127,6 +134,7 @@
 			children = (
 				6492D8512AAC4F0300DAF0E4 /* ProfileThreadFilter.swift */,
 				64A3E9DC2AADFC6600214EA4 /* User.swift */,
+				64B8D8A42AB1B6AB00A33BC1 /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 		648DF76A2AA4E1F900719427 /* ThreadCreation */ = {
 			isa = PBXGroup;
 			children = (
+				64B8D8A62AB1BFD400A33BC1 /* ViewModels */,
 				648DF76B2AA4E20400719427 /* Views */,
 			);
 			path = ThreadCreation;
@@ -416,6 +425,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		64B8D8A62AB1BFD400A33BC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				64B8D8A72AB1BFE000A33BC1 /* CreateThreadViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		64BB928F2AAC7E5800ECF0F9 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +539,7 @@
 				64A39B232AAF543600D78596 /* PreviewProvider.swift in Sources */,
 				64BB92922AAC8F6400ECF0F9 /* EditProfileView.swift in Sources */,
 				64B8D8A02AB0767500A33BC1 /* ImageUploader.swift in Sources */,
+				64B8D8AA2AB1C01700A33BC1 /* ThreadService.swift in Sources */,
 				64AC5CE52AA3901C0011B607 /* ContentView.swift in Sources */,
 				64A26B222AAE2465008194EF /* UserService.swift in Sources */,
 				6492D8542AAC684500DAF0E4 /* ThreadCell.swift in Sources */,
@@ -532,6 +550,7 @@
 				64933E3A2AA5DF7C006CFFA5 /* CircularProfileImageView.swift in Sources */,
 				64933E3C2AA5E02F006CFFA5 /* UserCell.swift in Sources */,
 				64A5D59B2AAF1DBB00378F0A /* ExploreViewModel.swift in Sources */,
+				64B8D8A82AB1BFE000A33BC1 /* CreateThreadViewModel.swift in Sources */,
 				648DF76D2AA4E21700719427 /* CreateThreadView.swift in Sources */,
 				6492D8522AAC4F0300DAF0E4 /* ProfileThreadFilter.swift in Sources */,
 				64A8F29C2AB057E800451ACA /* ImagePicker.swift in Sources */,
@@ -546,6 +565,7 @@
 				648DF7752AA4E2A100719427 /* ProfileView.swift in Sources */,
 				64707AB42AA4770400C1F9E7 /* RegistrationView.swift in Sources */,
 				64A3E9DD2AADFC6600214EA4 /* User.swift in Sources */,
+				64B8D8A52AB1B6AB00A33BC1 /* Thread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
